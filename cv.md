@@ -59,10 +59,10 @@ I have no work experience, but there are many educational small projects.
 
 Links
 - <https://github.com/kabdia/YSamokat> - html,css
-
 - <https://github.com/kabdia/miniCounter> html, css, react, js
 - <https://github.com/kabdia/source_about_flags> - html, css
 - <https://github.com/kabdia/irregular_verbs> - html, css, js
+- <https://github.com/kabdia/ToDoList> - html, css, react, typescript, js
 
 ### Education
 
