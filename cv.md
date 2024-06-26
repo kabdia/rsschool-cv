@@ -4,7 +4,7 @@
 
 ### Contacts
 
-e-mail:kabdia@mail.ru
+e-mail:kabdia@mail.ru<br>
 telegram:@kabdia1997
 
 ### About me
@@ -17,27 +17,27 @@ I am very purposeful, ready to learn and comprehend new things.
 ### Сode examples
 
 1. Example 1
-
-function saveData(json) {
-let arr = JSON.parse(json);        
-    for (let i = 0; i < arr.length; i++) {
-        localStorage.setItem(i, arr[i]);
+```
+    function saveData(json) {
+    let arr = JSON.parse(json);        
+        for (let i = 0; i < arr.length; i++) {
+            localStorage.setItem(i, arr[i]);
+        }
     }
-}
 
-try {
-    saveData('[1,2,3,4,5]')
-} catch (error) {
-    if (error.name == 'SyntaxError') {
-        alert('Неправильный JSON');
+    try {
+        saveData('[1,2,3,4,5]')
+    } catch (error) {
+        if (error.name == 'SyntaxError') {
+            alert('Неправильный JSON');
+        }
+        if (error.name == 'QuotaExceededError'){
+            alert('нет места в хранилище');
+        }
     }
-    if (error.name == 'QuotaExceededError'){
-        alert('нет места в хранилище');
-    }
-}
-
+```
 2. Example 2
-
+```
     try {
     let json = '["one","two","three","four","five","six"]';
 
@@ -52,7 +52,7 @@ try {
     } catch (error) {
     console.log('неправильный JSON');
     }
-
+```
 ### Experience
 
 I have no work experience, but there are many educational small projects.
