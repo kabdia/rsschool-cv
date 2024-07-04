@@ -1,7 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;    
+    justify-content: space-between;
+    min-height: 100cv;
+    font-family: 'Open Sans';
+    font-weight: 400;
 }
 img {
     width:300px;
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display:flex;
+    flex-wrap: wrap;
+}
+.section-right {
+    width:30%;  
+    background-color: #7ECDCC;    
+}
+.main .section-right, .mail .section-left {
+    padding:30px;
+}
+
+.section-right h3 {
+    color:white;
+    font-size: 35px;
+}
+.contacts li {
+    line-height: 40px;
+    list-style-type: none;
+    position: relative;
+    font-size: 20px;
+    color: white;
+}
+.contacts .item-email::before{
+    content:'📩 ';    
+}
+.contacts .item-teleg::before {
+    content:'💬 ';
+}
+.education,.contacts,.english {
+    margin-bottom: 30px;
+    color:white;    
+}
+.education h3, .english h3, .contacts h3 {
+    margin-bottom: 30px;
+    font-family: 'Caveat';
+    color:#4F6969;
+}
+.education p, .english p{
+    font-size: 20px;
+}
+.section-left {
+    width:70%;       
+}
+.header .section-left {
+    background-color: #E3F2F2;
+}
+.main .section-left {
+    padding:30px;
+}
+.photo {
+    padding:30px;
+    position: relative;    
+}
+.photo-style{    
+    border:3px solid white;
+    border-radius: 55%;
+    width:250px;    
+}
+.photo::before {
+    content:"";
+    position:absolute;
+    width:70px;
+    height:70px;
+    background-color: white;
+    border-radius: 50%;
+    top:60%;
+    left:60%;    
+}
+
+.header .section-left{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.name {
+    padding: 30px;    
+    font-family: 'Caveat';
+}
+.name h1 {
+    font-size: 70px;    
+}
+.name p {
+    font-size: 30px;
+}
+
+
+.code {
+    display:flex;
+    flex-wrap: wrap;
+}
+.container-code {
+    width:50%;
+}
+.tech{
+    width:20px;
+}
+.footer {
+    margin: 0 auto;
+}
+.img-footer {
+    width:50px;
+}
+.img-github {
+    width: 20px;
 }

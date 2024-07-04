@@ -3,10 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CV</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="assets/favicon.ico" />
 </head>
 <body>
-    <img src="./img/myPhoto.png" alt="photo">
+    <header class="header">
+        <div class="container">            
+            <section class="section-right">
+                <div class="photo">
+                    <img class="photo-style"src="./img/myPhoto.png" alt="photo">
+                </div>                
+            </section>  
+            <section class="section-left">
+                <div class="name">
+                    <h1>Kabakova Diana</h1> <br>
+                    <p>Front-end web developer (Beginner)</p>
+                </div>
+            </section>          
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <section class="section-right">
+                <section class="contacts">
+                    <h3 class="title">Contacts</h3>
+                    <ul class="items-contacts">
+                        <li class="item-email">kabdia@mail.ru</li>
+                        <li class="item-teleg">telegram:@kabdia1997</li>
+                    </ul>                    
+                </section>
+                
+                    <section class="education">
+                        <h3>Education</h3>
+                        <p>✔ I have secondary and higher education.
+                            Higher education - SPbSUT (Bachelor - Information Systems and Technologies)<br><br>
+                            ✔ I do a lot of self-education, learning Italian and English.<br><br>
+                            ✔ I study development online with a mentor (code.mu) and independently.</p>
+                    </section>
+                    <section class="english">
+                        <h3>English</h3>
+                        <p>I have level A0-A1</p>
+                    </section>
+            </section>
+            <section class="section-left">
+                <section class="about">
+                    <h3 class="title">About me</h3>
+                    <aside class="aside">
+                    My name is Diana. I`m 27. Live in Russia.<br>
+                    I have layout skills, basic skills in working with GIT, I know the basics of js, HTML layout, CSS markup.
+                    I have no commercial development experience, but I have a great desire to start my career in this field.
+                    I am very purposeful, ready to learn and comprehend new things.
+                    </aside>
+                </section>
+                <h3>Code examples</h3>
+                <section class="code">                    
+                    <div class="container-code">                    
+                    <h4>Example 1</h4>
+                    <pre>
+                        <code>
+function saveData(json) {
+    let arr = JSON.parse(json);        
+    for (let i = 0; i < arr.length; i++) {
+        localStorage.setItem(i, arr[i]);
+        }
+    }
+                            
+    try {
+        saveData('[1,2,3,4,5]')
+    } catch (error) {
+    if (error.name == 'SyntaxError') {
+        alert('Неправильный JSON');
+    }
+    if (error.name == 'QuotaExceededError'){
+        alert('нет места в хранилище');
+    }
+}
+                        </code>
+                    </pre>
+                </div>
+                <div class="container-code">
+                    <h4>Example 2</h4>
+                    <pre>
+                        <code>
+try {
+    let json = '["one","two","three","four","five","six"]';
+                            
+    let ul = document.querySelector('#list');
+    let arr = JSON.parse(json);
+                            
+    for (let elem of arr) {
+        let li = document.createElement('li');
+        li.innerHTML = elem;
+        ul.appendChild(li);
+    }
+} catch (error) {
+    console.log('неправильный JSON');
+}
+                        </code>
+                    </pre>
+                </div>
+                </section>
+                
+                <section class="experience">
+                    <h3>Experience</h3>
+                    <div class="skills">
+                        <ul>
+                            <li><img class="tech" src="./img/html.png" alt="html"></li>
+                            <li><img class="tech" src="./img/css.png" alt="css"></li>
+                            <li><img src="./img/js.png" alt="js" class="tech"></li>
+                        </ul>               
+                    </div>                    
+                    <p>I have no work experience, but there are many educational small projects.</p>
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="https://github.com/kabdia/YSamokat">Lending (test task from Yandex)</a></li>
+                        <li><a href="https://github.com/kabdia/miniCounter">Counter</a></li>
+                        <li><a href="https://github.com/kabdia/source_about_flags">Website about flags</a></li>
+                        <li><a href="https://github.com/kabdia/irregular_verbs">Website (layout) for studying irregular verbs</a></li>
+                        <li><a href="https://github.com/kabdia/ToDoList">To-Do-list</a>                            
+                    </ul>
+                </section>
+                
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <span>Made with <a href="https://rs.school/courses/javascript-ru"><img class="img-footer" src="./img/rs-logo.svg" alt="rs"></a></span>
+            <a href="https://github.com/kabdia"><img class="img-github"src="./img/github.png" alt="github"></a>
+            2024
+        </div>
+    </footer>
+    
 </body>
 </html>
