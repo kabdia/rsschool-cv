@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="assets/favicon.ico" >
+</head>
+<body>
+    <header class="header">
+        <div class="container">  
+                     
+            <div class="section-right">
+                <div class="photo">
+                    <img class="photo-style" src="./img/myPhoto.png" alt="photo">
+                </div>                
+            </div>  
+            <section class="section-left">
+                <nav class="nav">
+                    <ul class="ul-nav">
+                        <li><a href="#edu">Education</a></li>
+                        <li><a href="#code">Code examples</a></li>
+                        <li><a href="#exp">Experience</a></li>
+                    </ul>                    
+                </nav> 
+                <div class="name">
+                    <h1>Kabakova Diana</h1> <br>
+                    <h2>Front-end web developer (Beginner)</h2>
+                </div>
+            </section>          
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="section-right">
+                <section class="contacts">
+                    <h3 class="title">Contacts</h3>
+                    <ul class="items-contacts">
+                        <li class="item-email">kabdia@mail.ru</li>
+                        <li class="item-teleg">telegram:@kabdia1997</li>
+                        <li class="item-lication">Russia, Chelyabinsk</li>
+                    </ul>                    
+                </section>
+                
+                    <section class="education">
+                        <h3 id="edu">Education</h3>
+                        <p>✔ I have secondary and higher education.
+                            Higher education - SPbSUT (Bachelor - Information Systems and Technologies)<br><br>
+                            ✔ I do a lot of self-education, learning Italian and English.<br><br>
+                            ✔ I study development online with a mentor (code.mu) and independently.</p>
+                    </section>
+                    <section class="english">
+                        <h3>English</h3>
+                        <p>I have level A0-A1</p>
+                    </section>
+            </div>
+            <section class="section-left">
+                <section class="about">
+                    <div class="title">
+                        
+                        <h3>About me</h3>
+                    </div>
+                    
+                    <aside class="aside">
+                    My name is Diana. I`m 27. I am a responsible, calm person, ready to work and develop myself.<br>
+                    I have layout skills, basic skills in working with GIT, GitHub. I know the basics of js, HTML layout, CSS markup. I know graphic editors: Photoshop and Figma.<br><br>
+                    I have no commercial development experience, but I have a great desire to start my career in this field.
+                    I am very purposeful, ready to learn and comprehend new things.
+                    </aside>
+                </section>
+                <div class="title">
+                    
+                    <h3 id="code">Code examples</h3>
+                </div>
+                
+                <section class="code">                    
+                    <div class="container-code">                    
+                    <h4>Example 1</h4>
+                    <pre>
+                        <code>
+function saveData(json) {
+    let arr = JSON.parse(json);        
+    for (let i = 0; i &lt; arr.length; i++) {
+        localStorage.setItem(i, arr[i]);
+        }
+    }
+                            
+    try {
+        saveData('[1,2,3,4,5]')
+    } catch (error) {
+    if (error.name == 'SyntaxError') {
+        alert('Неправильный JSON');
+    }
+    if (error.name == 'QuotaExceededError'){
+        alert('нет места в хранилище');
+    }
+}
+                        </code>
+                    </pre>
+                </div>
+                <div class="container-code">
+                    <h4>Example 2</h4>
+                    <pre>
+                        <code>
+try {
+    let json = '["one","two","three","four","five","six"]';
+                            
+    let ul = document.querySelector('#list');
+    let arr = JSON.parse(json);
+                            
+    for (let elem of arr) {
+        let li = document.createElement('li');
+        li.innerHTML = elem;
+        ul.appendChild(li);
+    }
+} catch (error) {
+    console.log('неправильный JSON');
+}
+                        </code>
+                    </pre>
+                </div>
+                </section>
+                
+                <section class="experience">
+                    <div class="title">
+                        
+                        <h3 id="exp">Experience</h3>
+                    </div>                    
+                    <div class="skills">
+                        <ul>
+                            <li><img class="tech" src="./img/html.png" alt="html">  HTML</li>
+                            <li><img class="tech" src="./img/css.png" alt="css"> CSS</li>
+                            <li><img src="./img/js.png" alt="js" class="tech"> Javascript</li>
+                            <li><img src="./img/git.png" alt="js" class="tech"> Git</li>
+                            <li><img src="./img/figma.png" alt="js" class="tech"> Figma</li>
+                        </ul>               
+                    </div>                    
+                    <p class="skills-links">I have no work experience, but there are many educational small projects.</p>
+                    <h4>Links</h4>
+                    <ul class="skills-items">
+                        <li class="skills-item"><a href="https://github.com/kabdia/miniCounter">Counter</a></li>
+                        <li class="skills-item"><a href="https://github.com/kabdia/YSamokat">Lending (test task from Yandex)</a></li>
+                        <li class="skills-item"><a href="https://github.com/kabdia/source_about_flags">Website about flags</a></li>
+                        <li class="skills-item"><a href="https://github.com/kabdia/irregular_verbs">Website (layout) for studying irregular verbs</a></li>
+                        <li class="skills-item"><a href="https://github.com/kabdia/ToDoList">To-Do-list</a>                            
+                    </ul>
+                </section>
+                
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="rsshool">
+                <span>Made with <a href="https://rs.school/courses/javascript-ru"><img class="img-footer" src="./img/rs-logo.svg" alt="rs"></a></span>
+                
+            </div>
+            <div class="info">
+                <a href="https://github.com/kabdia"><img class="img-github" src="./img/github.png" alt="github"></a>
+                <span>2024</span>
+            </div>            
+        </div>
+    </footer>
+    
+</body>
+</html>
