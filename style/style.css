@@ -68,7 +68,7 @@ img {
     display: flex;
     flex-direction: column;        
 }
-.nav {
+.nav ul{
     display:flex;
 }
 .nav li{
